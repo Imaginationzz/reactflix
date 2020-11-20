@@ -1,8 +1,28 @@
 import React from 'react'
-import { Navbar, Nav, FormControl, Form, Dropdown } from 'react-bootstrap'
+import { Navbar, Nav, FormControl, Form, Dropdown, Button } from 'react-bootstrap'
 import logo from '../icon.png';
 
 class NavBar extends React.Component {
+  state={
+    search: null,
+    movie : null,
+  }
+
+  FetchMovies = async () => {
+    if(this.state.search === null){
+        console.log("noSearch")
+    } else{
+        try {
+     let response = await fetch(`http://www.omdbapi.com/?apikey=787f7ed8&s=${this.state.search}`)
+        let movies = await response.json()
+            this.setState({movie : movies})
+            console.log(movies)
+        } catch (e) {
+            console.log("error happened, that's life", e)
+        }
+    }
+}
+
   render() {
     return (
       <Navbar variant="dark">
@@ -13,19 +33,11 @@ class NavBar extends React.Component {
           <Nav.Link href="#pricing">My List</Nav.Link>
         </Nav>
         <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={(e) => {
+                this.setState({search:e.target.value});
+                }}/>
         </Form>
-        <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            <img src="" alt=""/>
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+        <Button variant="primary" onClick={this.FetchMovies}>Search</Button>
       </Navbar>
     )
   }
