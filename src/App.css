@@ -26,5 +26,34 @@ footer ul li a:hover {
 
 #face {
   width: 50px;
-  
+}
+
+.accountPage #member {
+  border-top: 2px solid #8a8888;
+  border-bottom: 2px solid #8a8888;
+}
+.accountPage #update-pay {
+  border-top: 2px solid #8a8888;
+}
+
+.accountPage a {
+  display: block;
+}
+
+.accountPage #plan-details {
+  border-top: 2px solid #8a8888;
+  border-bottom: 2px solid #8a8888;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: #8a8888;
+}
+
+.accountPage #setting {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #8a8888;
+  color: #8a8888;
+}
+.accountPage .container {
+  color: black;
 }
