@@ -1,6 +1,5 @@
 import React, { PureComponent } from "react";
-import SingleMovie from "./SingleMovie";
-import "./Gallery.scss";
+import SingleMovie from "./singleMovie";
 
 export default class Gallery extends PureComponent {
   state = {

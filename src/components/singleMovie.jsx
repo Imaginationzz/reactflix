@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
-import "./SingleMovie.scss";
-import "../../index.css";
+
+import "../index.css";
 
 export default class SingleMovie extends PureComponent {
   render() {
