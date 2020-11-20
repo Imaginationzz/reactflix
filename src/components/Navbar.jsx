@@ -1,14 +1,15 @@
 import React from 'react'
 import { Navbar, Nav, FormControl, Form, Dropdown } from 'react-bootstrap'
 import logo from '../icon.png';
+import face from '../face.jpeg'
 
 class NavBar extends React.Component {
   render() {
     return (
       <Navbar variant="dark">
-        <Navbar.Brand href="#home"><img className='logo' src={logo} alt='Logo' /></Navbar.Brand>
+        <Navbar.Brand href="/"><img className='logo' src={logo} alt='Logo' /></Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Tv Shovs</Nav.Link>
+          <Nav.Link href="/">Tv Shovs</Nav.Link>
           <Nav.Link href="#features">Movies</Nav.Link>
           <Nav.Link href="#pricing">My List</Nav.Link>
         </Nav>
@@ -16,8 +17,8 @@ class NavBar extends React.Component {
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
         </Form>
         <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            <img src="" alt=""/>
+          <Dropdown.Toggle className='p-0 mr-3' variant="success" id="dropdown-basic">
+            <img src={face} alt="face" id='face' />
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
