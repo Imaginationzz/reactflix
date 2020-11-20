@@ -12,7 +12,7 @@ const Footer = () => {
           <Col>
             <ul>
               <li>
-                <a href="#fff"><img id='logo' src={logo} alt='logo' /></a>
+                <a href="/"><img id='logo' src={logo} alt='logo' /></a>
               </li>
               <li>
                 <a href="#fff">Audio and subtitles</a>

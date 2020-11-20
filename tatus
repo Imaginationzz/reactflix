@@ -1,0 +1,93 @@
+[33mcommit 40cd00c263e752a88c5d3cce4894df138ef7ee6d[m[33m ([m[1;36mHEAD -> [m[1;32mabdugaffor[m[33m)[m
+Author: Abdugaffor-97 <abdurahimov.97@list.ru>
+Date:   Fri Nov 20 20:24:11 2020 +0500
+
+    added styless
+
+[33mcommit 4f640e0edfc2d0c8f0480210200a4165bd714690[m
+Merge: 0cb5dc4 cd27469
+Author: Abdugaffor-97 <abdurahimov.97@list.ru>
+Date:   Fri Nov 20 20:16:29 2020 +0500
+
+    Merged
+
+[33mcommit 0cb5dc4233113da8525512834514852736c6b844[m[33m ([m[1;31morigin/abdugaffor[m[33m)[m
+Author: Abdugaffor-97 <abdurahimov.97@list.ru>
+Date:   Fri Nov 20 19:55:57 2020 +0500
+
+    Addded Profile jsx
+
+[33mcommit cd2746909470837187cf5b036bd0a1defc560b69[m
+Author: Yazid Rahmouni <yezidrahmouni@gmail.com>
+Date:   Fri Nov 20 17:50:39 2020 +0300
+
+    Update Gallery.jsx
+
+[33mcommit a29bd86354ef3a5b8e8953a3a108bd713af743e9[m
+Author: Yazid Rahmouni <yezidrahmouni@gmail.com>
+Date:   Fri Nov 20 17:49:52 2020 +0300
+
+    Update Gallery.jsx
+
+[33mcommit 27579f89d1a0f1e9c8954a95092f3275fca6d0e5[m
+Author: Abdugaffor-97 <abdurahimov.97@list.ru>
+Date:   Fri Nov 20 19:19:48 2020 +0500
+
+    Added pagination
+
+[33mcommit 18f738b7d1cb8c758d8aaaeb7026ced4d86b40a3[m
+Author: Yazid Rahmouni <yezidrahmouni@gmail.com>
+Date:   Fri Nov 20 17:09:30 2020 +0300
+
+    fixing bugs
+
+[33mcommit 00afcdd8aad6b43a78b5c05576522b52e3948184[m
+Author: Yazid Rahmouni <yezidrahmouni@gmail.com>
+Date:   Fri Nov 20 17:03:13 2020 +0300
+
+    adding main files
+
+[33mcommit 2f0a45ac1c6b3cf5ef21349b4dec8a5908a17690[m
+Merge: 7a708fa 34c1364
+Author: Abdug'affor <56096073+Abdugaffor-97@users.noreply.github.com>
+Date:   Fri Nov 20 17:35:23 2020 +0500
+
+    Merge pull request #2 from Imaginationzz/abdugaffor
+    
+    Abdugaffor
+
+[33mcommit 34c1364f5cc615f52ef672ae7bcf706d64a59359[m
+Author: Abdugaffor-97 <abdurahimov.97@list.ru>
+Date:   Fri Nov 20 17:26:28 2020 +0500
+
+    Added Navbar
+
+[33mcommit 0af36dd23d305bd57edb32393b5af28178bc76d1[m
+Author: Abdugaffor-97 <abdurahimov.97@list.ru>
+Date:   Fri Nov 20 16:20:20 2020 +0500
+
+    Footer part fineshed
+
+[33mcommit 7a708faa68d28edcc0503ddb05f8b2a33e99d57c[m
+Author: Yazid Rahmouni <yezidrahmouni@gmail.com>
+Date:   Fri Nov 20 13:22:21 2020 +0300
+
+    bootsrap update
+
+[33mcommit 5e4d4a59bb3f48bfa5631ba3e569b2cee2955ad5[m
+Author: Abdugaffor-97 <abdurahimov.97@list.ru>
+Date:   Fri Nov 20 15:03:00 2020 +0500
+
+    Added Navbar and react bootstrap
+
+[33mcommit 415b8b9b029a60999b5de986f7427bfe263bf92b[m
+Author: Abdugaffor-97 <abdurahimov.97@list.ru>
+Date:   Fri Nov 20 14:25:07 2020 +0500
+
+    First commit
+
+[33mcommit 61fa25a2b25e9420322cea4f8f1ca2c4be3c0aff[m
+Author: Yazid Rahmouni <yezidrahmouni@gmail.com>
+Date:   Fri Nov 20 12:11:50 2020 +0300
+
+    initial css commit

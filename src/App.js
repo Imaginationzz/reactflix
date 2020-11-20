@@ -1,16 +1,22 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
-import './App.css';
+
+import MainPage from "./components/Main";
+import Account from "./components/Account";
+import { Route, Switch } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Footer />
+
+      <Switch>
+        <Route path="/" component={MainPage} exact />
+        <Route path="/account" component={Account} />
+        <Route component={Error} />
+      </Switch>
+
     </div>
   );
 }
