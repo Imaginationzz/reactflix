@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import logo from '../logo.svg';
+import logo from '../icon.png';
 
 
 
@@ -12,7 +12,7 @@ const Footer = () => {
           <Col>
             <ul>
               <li>
-                <a href="#fff"><img href={logo} alt='logo' /></a>
+                <a href="#fff"><img id='logo' src={logo} alt='logo' /></a>
               </li>
               <li>
                 <a href="#fff">Audio and subtitles</a>

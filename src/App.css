@@ -15,3 +15,11 @@ footer ul li a {
 footer ul li a:hover {
   color: white;
 }
+
+.logo {
+  width: 100px;
+}
+
+#logo {
+  width: 50px;
+}
