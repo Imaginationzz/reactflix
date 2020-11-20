@@ -52,15 +52,17 @@ export default class Gallery extends PureComponent {
           }}
         />
 
-        {this.state.result.map((movie) => {
+        {this.state.result.map((movie, index) => {
+          movie = movie.sort((a, b) => a.Year.localeCompare(b.Year));
           return (
-            <div className="saga">
+            <div className="saga" key={index}>
               {movie.map((saga, index) => {
                 return (
                   <SingleMovie
                     title={saga.Title}
                     img={saga.Poster}
                     key={index}
+                    year={saga.Year}
                   />
                 );
               })}

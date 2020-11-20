@@ -98,7 +98,7 @@ footer {
   height: 90%;
 }
 
-.thumbnails p {
+.title {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -107,11 +107,18 @@ footer {
   transition: opacity 0.5s ease;
 }
 
+.year {
+  position: absolute;
+  bottom: -5%;
+  color: white;
+  transition: opacity 0.5s ease;
+}
+
 .thumbnails:hover > img {
   filter: brightness(50%);
 }
 
-.thumbnails:hover > p {
+.thumbnails:hover > .title {
   opacity: 1;
 }
 
@@ -142,7 +149,6 @@ footer {
   width: 100%;
   height: 250px;
   display: flex;
-  animation: slide 20s infinite;
 }
 
 @keyframes slide {
