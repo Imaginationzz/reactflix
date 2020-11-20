@@ -19,6 +19,7 @@ export default class Gallery extends PureComponent {
     try {
       let response = await fetch(this.state.url + this.state.key + title);
       let result = await response.json();
+      //console.log(result, "dddddd");
       this.arrayMovie.push(result);
       this.setState({ result: [...this.state.result, result.Search] });
       console.log(this.state.result);
@@ -56,7 +57,7 @@ export default class Gallery extends PureComponent {
           movie = movie.sort((a, b) => a.Year.localeCompare(b.Year));
           return (
             <div className="saga" key={index}>
-              {movie.map((saga, index) => {
+              {movie.reverse().map((saga, index) => {
                 return (
                   <SingleMovie
                     title={saga.Title}
