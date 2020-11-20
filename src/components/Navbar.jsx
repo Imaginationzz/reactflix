@@ -1,6 +1,13 @@
+<<<<<<< Updated upstream
 import React from 'react'
 import { Navbar, Nav, FormControl, Form, Dropdown, Button } from 'react-bootstrap'
 import logo from '../icon.png';
+=======
+import React from "react";
+import { Navbar, Nav, FormControl, Form, Dropdown } from "react-bootstrap";
+import logo from "../icon.png";
+import face from "../face.jpg";
+>>>>>>> Stashed changes
 
 import face from '../face.jpeg'
 
@@ -32,17 +39,33 @@ class NavBar extends React.Component {
     return (
       <>
       <Navbar variant="dark">
+<<<<<<< Updated upstream
         <Navbar.Brand href="/"><img className='logo' src={logo} alt='Logo' /></Navbar.Brand>
+=======
+        <Navbar.Brand href="/">
+          <img className="logo" src={logo} alt="Logo" />
+        </Navbar.Brand>
+>>>>>>> Stashed changes
         <Nav className="mr-auto">
           <Nav.Link href="/">Tv Shovs</Nav.Link>
           <Nav.Link href="#features">Movies</Nav.Link>
           <Nav.Link href="#pricing">My List</Nav.Link>
         </Nav>
 
+<<<<<<< Updated upstream
 
         <Dropdown>
           <Dropdown.Toggle className='p-0 mr-3' variant="success" id="dropdown-basic">
             <img src={face} alt="face" id='face' />
+=======
+        <Dropdown>
+          <Dropdown.Toggle
+            className="p-0 mr-3"
+            variant="success"
+            id="dropdown-basic"
+          >
+            <img src={face} alt="face" id="face" />
+>>>>>>> Stashed changes
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
@@ -59,11 +82,14 @@ class NavBar extends React.Component {
         </Form>
         <Button variant="primary" onClick={this.FetchMovies}>Search</Button>
       </Navbar>
+<<<<<<< Updated upstream
       <Gallery searchedMovies ={this.state.searchedMovies}></Gallery>
       </>
     )
+=======
+    );
+>>>>>>> Stashed changes
   }
 }
 
-
-export default NavBar
+export default NavBar;

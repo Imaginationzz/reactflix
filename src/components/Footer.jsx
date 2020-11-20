@@ -1,8 +1,6 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import logo from '../icon.png';
-
-
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import logo from "../icon.png";
 
 const Footer = () => {
   return (
@@ -12,7 +10,13 @@ const Footer = () => {
           <Col>
             <ul>
               <li>
+<<<<<<< Updated upstream
                 <a href="/"><img id='logo' src={logo} alt='logo' /></a>
+=======
+                <a href="/">
+                  <img id="logo" src={logo} alt="logo" />
+                </a>
+>>>>>>> Stashed changes
               </li>
               <li>
                 <a href="#fff">Audio and subtitles</a>
@@ -24,16 +28,22 @@ const Footer = () => {
                 <a href="#fffffffffff">Service code</a>
               </li>
               <li>
-                <small><a href="#ffffffff">Copyright 1997-2019 Netflix Inc.0d00fcda2fdf9c0de</a></small>
+                <small>
+                  <a href="#ffffffff">
+                    Copyright 1997-2019 Netflix Inc.0d00fcda2fdf9c0de
+                  </a>
+                </small>
               </li>
             </ul>
           </Col>
           <ul>
             <li>
               <a href="#fff">Audio description</a>
-            </li><li>
+            </li>
+            <li>
               <a href="#ffffffffff">Investor relations</a>
-            </li><li>
+            </li>
+            <li>
               <a href="#fffffffffff">Legacy notices</a>
             </li>
           </ul>
@@ -41,33 +51,32 @@ const Footer = () => {
             <ul>
               <li>
                 <a href="#fff">Audio description</a>
-              </li><li>
+              </li>
+              <li>
                 <a href="#ffffffffff">Investor relations</a>
-              </li><li>
+              </li>
+              <li>
                 <a href="#fffffffffff">Legacy notices</a>
               </li>
             </ul>
-
           </Col>
           <Col>
             <ul>
               <li>
                 <a href="#fff">Audio description</a>
-              </li><li>
+              </li>
+              <li>
                 <a href="#ffffffffff">Investor relations</a>
-              </li><li>
+              </li>
+              <li>
                 <a href="#fffffffffff">Legacy notices</a>
               </li>
             </ul>
-
           </Col>
-
         </Row>
       </Container>
     </footer>
-
-  )
-}
-
+  );
+};
 
 export default Footer;
