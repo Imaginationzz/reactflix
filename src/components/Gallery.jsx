@@ -65,9 +65,34 @@ export default class Gallery extends PureComponent {
 
         {this.state.result.map((movie, index) => {
           movie = movie.sort((a, b) => a.Year.localeCompare(b.Year));
-          return (
+          return (<>
+            <h1 style={{color: "white"}}>{movie[0].Title}</h1>
             <div className="saga" key={index}>
               {movie.reverse().map((saga, index) => {
+                return (<>
+                  <SingleMovie
+                    title={saga.Title}
+                    img={saga.Poster}
+                    key={index}
+                    year={saga.Year}
+                  /></>
+                );
+              })}
+            </div>
+            </>
+          );
+        })}
+      </div>
+        </>
+      ) : (<>
+      <Button onClick = {this.updateNewResults}>Create your Search Result</Button>
+      <div className="gallery">
+        {this.state.newResult.map((movie, index) => {
+          movie = movie.sort((a, b) => b.Year.localeCompare(a.Year));
+          return (<>
+          <h1 style={{color: "white"}}>{movie[9].Title}</h1>
+            <div className="saga">
+              {movie.map((saga, index) => {
                 return (
                   <SingleMovie
                     title={saga.Title}
@@ -77,27 +102,7 @@ export default class Gallery extends PureComponent {
                   />
                 );
               })}
-            </div>
-          );
-        })}
-      </div>
-        </>
-      ) : (<>
-      <Button onClick = {this.updateNewResults}>Create your Search Result</Button>
-      <div className="gallery">
-        {this.state.newResult.map((movie) => {
-          return (
-            <div className="saga">
-              {movie.map((saga, index) => {
-                return (
-                  <SingleMovie
-                    title={saga.Title}
-                    img={saga.Poster}
-                    key={index}
-                  />
-                );
-              })}
-            </div>
+            </div></>
           );
         })}
       </div></>)

@@ -30,7 +30,7 @@ class NavBar extends React.Component {
       <Navbar variant="dark">
         <Navbar.Brand href="#home"><img className='logo' src={logo} alt='Logo' /></Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Tv Shovs</Nav.Link>
+          <Nav.Link href="#home">TV Shows</Nav.Link>
           <Nav.Link href="#features">Movies</Nav.Link>
           <Nav.Link href="#pricing">My List</Nav.Link>
         </Nav>

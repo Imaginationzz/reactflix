@@ -2,6 +2,7 @@ body {
   background-color: #141414;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  width: 100%;
 }
 
 a {
@@ -89,7 +90,7 @@ footer {
 }
 
 .thumbnails {
-  width: 220px;
+  width: 400px;
   margin: 0 0.2rem;
   position: relative;
 }
