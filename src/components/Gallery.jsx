@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import SingleMovie from "./singleMovie";
+import {Button} from "react-bootstrap"
 
 export default class Gallery extends PureComponent {
   state = {
@@ -9,9 +10,14 @@ export default class Gallery extends PureComponent {
     resultTitle: "",
     img: "",
     result: [],
+    newResult:[],
   };
 
   arrayMovie = [];
+
+  updateNewResults= () => {
+    this.setState({newResult: [this.props.searchedMovies.Search]})
+  }
 
   fetcher = async (title) => {
     title = this.array[this.array.length - 1];
@@ -38,6 +44,10 @@ export default class Gallery extends PureComponent {
 
   render() {
     return (
+      <>
+      {this.props.searchedMovies === null ? 
+      (
+        <>
       <div className="gallery">
         <input
           type="text"
@@ -71,6 +81,28 @@ export default class Gallery extends PureComponent {
           );
         })}
       </div>
+        </>
+      ) : (<>
+      <Button onClick = {this.updateNewResults}>Create your Search Result</Button>
+      <div className="gallery">
+        {this.state.newResult.map((movie) => {
+          return (
+            <div className="saga">
+              {movie.map((saga, index) => {
+                return (
+                  <SingleMovie
+                    title={saga.Title}
+                    img={saga.Poster}
+                    key={index}
+                  />
+                );
+              })}
+            </div>
+          );
+        })}
+      </div></>)
+    }
+      </>
     );
   }
 }
