@@ -1,11 +1,12 @@
 import React from 'react'
 import { Navbar, Nav, FormControl, Form, Dropdown, Button } from 'react-bootstrap'
 import logo from '../icon.png';
+import Gallery from './Gallery';
 
 class NavBar extends React.Component {
   state={
     search: null,
-    movie : null,
+    searchedMovies : null,
   }
 
   FetchMovies = async () => {
@@ -15,7 +16,7 @@ class NavBar extends React.Component {
         try {
      let response = await fetch(`http://www.omdbapi.com/?apikey=787f7ed8&s=${this.state.search}`)
         let movies = await response.json()
-            this.setState({movie : movies})
+            this.setState({searchedMovies : movies})
             console.log(movies)
         } catch (e) {
             console.log("error happened, that's life", e)
@@ -25,6 +26,7 @@ class NavBar extends React.Component {
 
   render() {
     return (
+      <>
       <Navbar variant="dark">
         <Navbar.Brand href="#home"><img className='logo' src={logo} alt='Logo' /></Navbar.Brand>
         <Nav className="mr-auto">
@@ -39,6 +41,8 @@ class NavBar extends React.Component {
         </Form>
         <Button variant="primary" onClick={this.FetchMovies}>Search</Button>
       </Navbar>
+      <Gallery searchedMovies ={this.state.searchedMovies}></Gallery>
+      </>
     )
   }
 }
