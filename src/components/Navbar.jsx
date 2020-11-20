@@ -13,9 +13,7 @@ class NavBar extends React.Component {
           <Nav.Link href="#features">Movies</Nav.Link>
           <Nav.Link href="#pricing">My List</Nav.Link>
         </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        </Form>
+
         <Dropdown>
           <Dropdown.Toggle className='p-0 mr-3' variant="success" id="dropdown-basic">
             <img src={face} alt="face" id='face' />
