@@ -12,6 +12,10 @@ footer ul li a {
   color: #969393;
 }
 
+a {
+  color: #969393;
+}
+
 footer ul li a:hover {
   color: white;
 }
